@@ -1,0 +1,143 @@
+    @import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Habibi&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0px;
+        font-family: 'Mulish', sans-serif;
+        /* font-family: 'Habibi', serif; */
+        /* font-family: 'Andika', sans-serif; */
+    }
+
+    li,
+    ul {
+        list-style: none;
+        display: inline;
+        margin: 30px;
+
+    }
+
+    .menu {
+        text-align: right;
+        font-size: 25px;
+        margin-right: 100px;
+        align-items: center;
+    }
+
+    .menu:hover {}
+
+    .nav {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .name {
+        margin-top: 15px;
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+    .intro {
+        margin-top: 30px;
+        font-size: 30px;
+        color: rgb(97, 95, 95);
+    }
+
+    .contact_btn {
+        cursor: pointer;
+        margin-top: 45px;
+        border-radius: 9px;
+        border-style: none;
+        padding: 10px;
+        background-color: #102536;
+        color: white;
+        width: 300px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .home {
+        margin: 0px;
+        /* text-align: center; */
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .left_container {
+        text-align: right;
+    }
+
+    .menu_box {
+        margin-top: 100px;
+    }
+
+    .menu_btn:hover {
+        /* font-weight: 600; */
+        font-size: 28px;
+        transition: all 0.5s;
+    }
+
+    /* .menu_btn {
+        background-color: red;
+        transition: all 0.5s;
+    } */
+
+    #about_intro {
+        font-size: 30px;
+    }
+
+    .inline_blk {
+        display: inline-block;
+    }
+
+    .MT15 {
+        margin-top: 15px;
+    }
+
+    .MT20 {
+        margin-top: 20px;
+    }
+
+    .MT30 {
+        margin-top: 30px;
+    }
+
+    .MT50 {
+        margin-top: 50px;
+    }
+
+    .MT100 {
+        margin-top: 100px;
+    }
+
+    .MT120 {
+        margin-top: 120px;
+    }
+
+    .MT150 {
+        margin-top: 150px;
+    }
+
+    .blanks {
+        width: 600px;
+        height: 30px;
+        font-size: 22px;
+
+        border-top: 0px;
+        border-right: 0;
+        border-left: 0;
+        outline-style: none;
+    }
+
+    .wt500 {
+        min-height: 300px;
+        max-height: 300px;
+        width: 500px;
+    }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMAILJS TEST</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("6F77UowF3zBMyXwGl");
+    })();
+    </script>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    padding: 24px;
+}
+input, textarea, button {
+    margin: 4px 0;
+    padding: 8px;
+}
+</style>
+<body>
+    <div>
+        <input type="text" placeholder="full name" id="fullName" required/> <br />    
+        <input type="email" placeholder="Email ID" id="email_id" required/> <br />
+        <textarea placeholder="Message" id="message" required></textarea> <br />
+        <button onclick="sendMail()">send</button>
+    </div>
+</body>
+<script>
+    function sendMail(){
+        var params = {
+            from_name : document.getElementById("fullName").value,
+            email_id: document.getElementById("email_id").value, 
+            message: document.getElementById("message").value
+        };
+
+        emailjs.send("service_syb4m3k", "template_q2k34tl", params).then(function (res) {
+            alert("Sucess! " + res.status);
+        })
+    }
+</script>
+</html>
